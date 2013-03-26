@@ -93,6 +93,9 @@ map <F8> :set tabstop=8<CR>
 map <F1> <Esc>
 imap <F1> <Esc>
 
+" I have never wanted 'K' to do what it does
+map K <Nop>
+
 " Files ending ".make" should be treated as Makefiles
 autocmd BufRead *.make set filetype=make
 
