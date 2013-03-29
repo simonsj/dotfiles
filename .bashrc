@@ -3,6 +3,9 @@
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
 
+# git stuff
+GIT_EDITOR='vim'
+
 # Aliases and history settings
 alias vi='vim'
 
