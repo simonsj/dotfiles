@@ -1,13 +1,19 @@
 # Command prompt
-export CLICOLOR=1
 
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
 
 # Aliases and history settings
 alias vi='vim'
-# On MacOSX 'export CLICOLOR=1' yields this effect.
-#alias ls='ls --color'
+
+if [ $(uname) = "Linux" ]
+then
+  alias ls='ls --color'
+else
+  # On MacOSX 'export CLICOLOR=1' yields the above effect.
+  export CLICOLOR=1
+fi
+
 alias h='history'
 alias psme='ps -ef | grep `whoami`'
 alias ifconfig='/sbin/ifconfig'
