@@ -5,6 +5,10 @@ export PATH="$HOME/bin:$PATH"
 
 # git stuff
 GIT_EDITOR='vim'
+alias gb='git branch'
+alias gd='git diff'
+alias gl='git log'
+alias gs='git status'
 
 # Aliases and history settings
 alias vi='vim'
