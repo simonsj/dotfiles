@@ -41,7 +41,10 @@ export HISTCONTROL="ignoredups:erasedups"
 export HISTIGNORE="ls:pwd:gow:hgt"
 
 function gfind {
-   find . -type f -exec grep --binary-files=without-match -H "$@" \{\} \; | grep -v "svn" | grep -v "\.git"
+   find . -name ".git" -prune \
+        -o -name "svn" -prune \
+        -o -name "tags" -prune \
+        -o -type f -exec grep --binary-files=without-match -H "$@" \{\} \;
 }
 
 function hgt {
