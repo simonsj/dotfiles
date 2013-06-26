@@ -15,7 +15,7 @@ alias vi='vim'
 
 if [ $(uname) = "Linux" ]
 then
-  alias ls='ls --color'
+  alias ls='ls --color=auto'
 else
   # On MacOSX 'export CLICOLOR=1' yields the above effect.
   export CLICOLOR=1
@@ -49,4 +49,11 @@ function gfind {
 
 function hgt {
    history | grep "$@" | tail
+}
+
+function gofeed {
+   cd ~/code/ofeed-scratch
+   node ./node-mirror/nm.js . &
+   node ./node-mirror/nm.js . 1338 &
+   cd -
 }
