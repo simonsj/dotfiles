@@ -11,21 +11,16 @@ else
   " If I'm using vim in a terminal (not gvim), stick to default
   " darkblue2 looks best in PuTTy; default looks good at work.
   "color darkblue2
-  color default
+  "color default
   "color sf
+  color hemisu
 endif
 
-" God my eyes and I have a strained relationship... (get the pun?)
-"set guifont=Monospace\ 14
-"set guifont=Monospace\ 12
-"set guifont=Monospace\ 10
-"set guifont=Inconsolata\ 12
-" osx: Doubt these fonts apply to osx.
+" Makes a difference when using vim over SSH
+set t_Co=256
 
 set tabstop=3
 set nowrap
-" JS: With my new setup visual bell is really really slow to refresh.
-" osx: Maybe that isn't true anymore.
 set vb
 syn on
 set expandtab
