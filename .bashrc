@@ -1,4 +1,5 @@
 # Command prompt
+export PS1='[\u@\h : \w] '
 
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
