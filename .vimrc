@@ -48,8 +48,11 @@ set wmh=0
 map <C-h> :set hls!<CR>:echo "highlighting" &hls ? "on" : "off"<CR>
 " Toggle list mode with control l
 map <C-l> :set list!<CR>:echo "list mode" &list ? "on" : "off"<CR>
-" Give me a horizontal scroll bar with control b
-map <C-b> :set guioptions+=b<CR>:echo "you have a horizontal scroll bar"<CR>
+
+if has('gui_running')
+  " Give me a horizontal scroll bar with control b
+  map <C-b> :set guioptions+=b<CR>:echo "you have a horizontal scroll bar"<CR>
+endif
 
 if &diff
   " Control h to go to left window
