@@ -5,7 +5,7 @@ export PS1='[\u@\h : \w] '
 export PATH="$HOME/bin:$PATH"
 
 # git stuff
-GIT_EDITOR='vim'
+export GIT_EDITOR='vim'
 alias gb='git branch'
 alias gd='git diff'
 alias gl='git log'
