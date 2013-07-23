@@ -99,6 +99,7 @@ autocmd BufRead *.god set filetype=ruby
 
 " pp --> puppet
 autocmd BufRead *.pp set filetype=puppet
+autocmd BufRead *.aug set tabstop=4
 
 " Files ending ".make" should be treated as Makefiles
 autocmd BufRead *.make set filetype=make
