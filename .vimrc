@@ -19,7 +19,7 @@ endif
 " Makes a difference when using vim over SSH
 set t_Co=256
 
-set tabstop=2
+set tabstop=8
 set nowrap
 set vb
 syn on
@@ -97,9 +97,14 @@ map K <Nop>
 " god files --> ruby
 autocmd BufRead *.god set filetype=ruby
 
+" Ruby
+autocmd BufRead *.rb set tabstop=2
+
 " pp --> puppet
 autocmd BufRead *.pp set filetype=puppet
 autocmd BufRead *.aug set tabstop=4
+
+autocmd BufRead *.coffee set filetype=coffee
 
 " Files ending ".make" should be treated as Makefiles
 autocmd BufRead *.make set filetype=make
