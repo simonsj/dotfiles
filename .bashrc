@@ -40,11 +40,13 @@ alias sr='screen -r'
 export HISTSIZE=10000
 export HISTCONTROL="ignoredups:erasedups"
 export HISTIGNORE="ls:pwd:gow:hgt"
+shopt -s histappend
 
 function gfind {
    find . -name ".git" -prune \
         -o -name "svn" -prune \
         -o -name "tags" -prune \
+        -o -name "vendor" -prune \
         -o -type f -exec grep --binary-files=without-match -H "$@" \{\} \;
 }
 
