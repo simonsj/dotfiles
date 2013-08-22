@@ -1,5 +1,5 @@
 # Command prompt
-export PS1='[\u@\h : \w] '
+export PS1='[\u@\h : \W] '
 
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
@@ -8,6 +8,7 @@ export PATH="$HOME/bin:$PATH"
 export GIT_EDITOR='vim'
 alias gb='git branch'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gl='git log'
 alias gs='git status'
 
