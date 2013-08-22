@@ -19,11 +19,11 @@ endif
 " Makes a difference when using vim over SSH
 set t_Co=256
 
-set tabstop=8
+set number
+set tabstop=2
 set nowrap
 set vb
 syn on
-set expandtab
 
 if has('gui_running')
   " Try to maintain a sane window size
@@ -94,6 +94,13 @@ imap <F1> <Esc>
 " I have never wanted 'K' to do what it does
 map K <Nop>
 
+" These days the neighborhoods use hard tabs; XXX should just auto-detect
+autocmd FileType c set tabstop=8 noexpandtab
+
+" shell-core
+autocmd FileType sh set expandtab
+autocmd BufRead *.sh set expandtab
+
 " god files --> ruby
 autocmd BufRead *.god set filetype=ruby
 
@@ -122,11 +129,3 @@ if has('gui_running')
   " For annotation output I want 80 columns + 88 for the ann column
   autocmd BufRead *.ann.out set columns=168
 endif
-
-" Vala stuff should be highlighted like Vala
-autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala            setfiletype vala
-au BufRead,BufNewFile *.vala            set noexpandtab
-au BufRead,BufNewFile *.vala            set tabstop=4
-au BufRead,BufNewFile *.vapi            setfiletype vala
