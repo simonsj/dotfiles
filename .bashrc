@@ -7,6 +7,7 @@ export PATH="$HOME/bin:$PATH"
 # git stuff
 export GIT_EDITOR='vim'
 alias gb='git branch'
+alias gcp='git cherry-pick'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gl='git log'
