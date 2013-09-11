@@ -105,7 +105,7 @@ autocmd BufRead *.sh set expandtab
 autocmd BufRead *.god set filetype=ruby
 
 " Ruby
-autocmd BufRead *.rb set tabstop=2
+autocmd BufRead *.rb set tabstop=2 expandtab
 
 " pp --> puppet
 autocmd BufRead *.pp set filetype=puppet
