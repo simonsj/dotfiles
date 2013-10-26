@@ -38,6 +38,7 @@ alias g='grep'
 alias lt='ls -altrh'
 alias sl='screen -list'
 alias sr='screen -r'
+alias tl='tmux list-sessions'
 
 alias zulu='date "+%Y-%m-%dT%H:%M:%SZ"'
 
@@ -65,4 +66,8 @@ function gofeed {
    node ./node-mirror/nm.js . &
    node ./node-mirror/nm.js . 1338 &
    cd -
+}
+
+function fcg {
+   find . -type f -name "*.[ch]" | xargs grep -e "$@"
 }
