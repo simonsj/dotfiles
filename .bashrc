@@ -30,6 +30,7 @@ alias ifconfig='/sbin/ifconfig'
 alias gmode='alias vi="gvim"'
 alias KILL='kill -9'
 alias no='grep -v'
+alias fc='find . -type f -name "*.[ch]"'
 alias ff='find . -type f'
 alias fn='find . -iname'
 alias g='grep'
@@ -37,6 +38,8 @@ alias g='grep'
 alias lt='ls -altrh'
 alias sl='screen -list'
 alias sr='screen -r'
+
+alias zulu='date "+%Y-%m-%dT%H:%M:%SZ"'
 
 # Bash history
 export HISTSIZE=10000
@@ -49,6 +52,7 @@ function gfind {
         -o -name "svn" -prune \
         -o -name "tags" -prune \
         -o -name "vendor" -prune \
+        -o -name "git" -prune \
         -o -type f -exec grep --binary-files=without-match -H "$@" \{\} \;
 }
 
