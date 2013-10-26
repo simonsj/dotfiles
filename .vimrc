@@ -94,8 +94,12 @@ imap <F1> <Esc>
 " I have never wanted 'K' to do what it does
 map K <Nop>
 
+set expandtab
+
 " These days the neighborhoods use hard tabs; XXX should just auto-detect
 autocmd FileType c set tabstop=8 noexpandtab
+
+autocmd BufRead *.coffee set expandtab
 
 " shell-core
 autocmd FileType sh set expandtab
