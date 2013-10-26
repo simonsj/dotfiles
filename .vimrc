@@ -98,6 +98,7 @@ set expandtab
 
 " These days the neighborhoods use hard tabs; XXX should just auto-detect
 autocmd FileType c set tabstop=8 noexpandtab
+autocmd BufRead *.h set tabstop=8 noexpandtab
 
 autocmd BufRead *.coffee set expandtab
 
