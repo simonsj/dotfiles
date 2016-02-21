@@ -3,6 +3,7 @@ export PS1='[\u@\h : \W] '
 
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
+export GOPATH="$HOME/code/gopath"
 
 # git stuff
 export GIT_EDITOR='vim'
@@ -48,26 +49,6 @@ export HISTCONTROL="ignoredups:erasedups"
 export HISTIGNORE="ls:pwd:gow:hgt"
 shopt -s histappend
 
-function gfind {
-   find . -name ".git" -prune \
-        -o -name "svn" -prune \
-        -o -name "tags" -prune \
-        -o -name "vendor" -prune \
-        -o -name "git" -prune \
-        -o -type f -exec grep --binary-files=without-match -H "$@" \{\} \;
-}
-
 function hgt {
    history | grep "$@" | tail
-}
-
-function gofeed {
-   cd ~/code/ofeed-scratch
-   node ./node-mirror/nm.js . &
-   node ./node-mirror/nm.js . 1338 &
-   cd -
-}
-
-function fcg {
-   find . -type f -name "*.[ch]" | xargs grep -e "$@"
 }
