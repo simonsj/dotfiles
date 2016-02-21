@@ -127,6 +127,8 @@ autocmd FileType make set tabstop=8 noexpandtab
 " SCons files should be highlighted like Python
 autocmd BufRead *.sc set filetype=python
 
+autocmd BufRead ld2.sql :exe "normal G?Checking\<cr>\ma\kkkk\jjjj"
+
 if has('gui_running')
   " For build output maxout the columns
   autocmd BufRead build.out.* set columns=190
