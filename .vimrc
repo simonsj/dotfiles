@@ -129,6 +129,10 @@ autocmd BufRead *.sc set filetype=python
 
 autocmd BufRead ld2.sql :exe "normal G?Checking\<cr>\ma\kkkk\jjjj"
 
+autocmd BufRead *.go set filetype=go
+autocmd Syntax go source ~/.vim/syntax/go.vim
+autocmd FileType go set tabstop=4 noexpandtab
+
 if has('gui_running')
   " For build output maxout the columns
   autocmd BufRead build.out.* set columns=190
