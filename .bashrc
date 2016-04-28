@@ -44,6 +44,10 @@ alias tl='tmux list-sessions'
 
 alias zulu='date "+%Y-%m-%dT%H:%M:%SZ"'
 
+function TS {
+  ts "%FT%H:%M:%.S"
+}
+
 # Bash history
 export HISTSIZE=10000
 export HISTCONTROL="ignoredups:erasedups"
@@ -53,3 +57,5 @@ shopt -s histappend
 function hgt {
    history | grep "$@" | tail
 }
+
+export HOMEBREW_NO_ANALYTICS=1
