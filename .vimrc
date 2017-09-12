@@ -15,6 +15,7 @@ else
   "color sf
   color hemisu
 endif
+set background=dark
 
 " Makes a difference when using vim over SSH
 set t_Co=256
