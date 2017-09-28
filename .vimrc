@@ -134,6 +134,9 @@ autocmd BufRead *.go set filetype=go
 autocmd Syntax go source ~/.vim/syntax/go.vim
 autocmd FileType go set tabstop=4 noexpandtab
 
+autocmd BufRead *.strace.out set filetype=strace
+autocmd BufRead strace* set filetype=strace
+
 if has('gui_running')
   " For build output maxout the columns
   autocmd BufRead build.out.* set columns=190
