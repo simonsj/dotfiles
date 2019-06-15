@@ -3,7 +3,6 @@ export PS1='[\u@\h : \W] '
 
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
-export GOPATH="$HOME/code/gopath"
 
 # git stuff
 export GIT_EDITOR='vim'
