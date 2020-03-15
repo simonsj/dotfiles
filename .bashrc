@@ -25,37 +25,18 @@ else
   export CLICOLOR=1
 fi
 
-alias h='history'
 alias psme='ps -ef | grep `whoami`'
-alias ifconfig='/sbin/ifconfig'
-alias gmode='alias vi="gvim"'
 alias KILL='kill -9'
 alias no='grep -v'
-alias fc='find . -type f -name "*.[ch]"'
-alias ff='find . -type f'
-alias fn='find . -iname'
 alias g='grep'
 
 alias lt='ls -altrh'
-alias sl='screen -list'
-alias sr='screen -r'
-alias tl='tmux list-sessions'
-
-alias zulu='date "+%Y-%m-%dT%H:%M:%SZ"'
-
-function TS {
-  ts "%FT%H:%M:%.S"
-}
 
 # Bash history
 export HISTSIZE=10000
 export HISTCONTROL="ignoredups:erasedups"
 export HISTIGNORE="ls:pwd:gow:hgt"
 shopt -s histappend
-
-function hgt {
-   history | grep "$@" | tail
-}
 
 export HOMEBREW_NO_ANALYTICS=1
 export BASH_SILENCE_DEPRECATION_WARNING=1
