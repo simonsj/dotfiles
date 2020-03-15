@@ -58,3 +58,4 @@ function hgt {
 }
 
 export HOMEBREW_NO_ANALYTICS=1
+export BASH_SILENCE_DEPRECATION_WARNING=1
