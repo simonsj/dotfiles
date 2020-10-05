@@ -28,6 +28,7 @@ fi
 alias psme='ps -ef | grep `whoami`'
 alias KILL='kill -9'
 alias no='grep -v'
+alias fn='find . -iname'
 alias g='grep'
 
 alias lt='ls -altrh'
