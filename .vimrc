@@ -128,7 +128,7 @@ autocmd FileType make set tabstop=8 noexpandtab
 " SCons files should be highlighted like Python
 autocmd BufRead *.sc set filetype=python
 
-autocmd BufRead ld2.sql :exe "normal gg/^;\<cr>\kkkk\ma"
+autocmd BufRead ld2.sql :loadview
 
 autocmd BufRead *.go set filetype=go
 autocmd Syntax go source ~/.vim/syntax/go.vim
