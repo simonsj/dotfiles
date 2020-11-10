@@ -4,6 +4,9 @@ export PS1='[\u@\h : \W] '
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
 
+# for Homebrew Ruby version
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
 # git stuff
 export GIT_EDITOR='vim'
 alias gb='git branch'
