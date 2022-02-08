@@ -142,3 +142,5 @@ if has('gui_running')
   " For annotation output I want 80 columns + 88 for the ann column
   autocmd BufRead *.ann.out set columns=168
 endif
+
+au BufRead,BufNewFile *.ts set filetype=typescript
