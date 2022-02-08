@@ -130,3 +130,6 @@ if has('gui_running')
 endif
 
 au BufRead,BufNewFile *.ts set filetype=typescript
+
+autocmd BufRead,BufNewFile *.m set filetype=octave
+autocmd Syntax octave source ~/.vim/syntax/octave.vim
