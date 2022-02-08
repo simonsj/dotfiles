@@ -19,7 +19,7 @@ endif
 
 " Show lists of files when doing ":sp" or ":e" or whatever
 set wildmode=longest,list
-" Set lbr so that linebreaks try to happen at work boundaries
+" Set lbr so that linebreaks try to happen at word boundaries
 set lbr
 
 set tags=tags;/
@@ -50,15 +50,12 @@ if &diff
   map <C-n> ]c
   " Control p to go to previous diff
   map <C-p> [c
-
   " I probably want the horizontal scroll bar when diffing like a madman
   set guioptions+=b
-
   " I don't use ^F ever; this grabs opposite side's diff piece
   map <C-f> :diffget<CR>
   " I don't use ^D ever; put from current side to the opposite side
   map <C-d> :diffput<CR>
-
 else
   " Control d to close the current buffer
   map <C-d> :bd<CR>
@@ -71,9 +68,6 @@ endif
 " Shift + left mouse click to split-jump to tag under cursor
 map <S-LeftMouse> <LeftMouse>:exe ":sta " expand("<cword>")<CR>
 
-" Use F3 and F8 to toggle between tabstops of 3 and 8 (VMware, "normal")
-map <F3> :set tabstop=3<CR>
-map <F8> :set tabstop=8<CR>
 " For my laptop; I know how to type :help.
 map <F1> <Esc>
 imap <F1> <Esc>
@@ -83,35 +77,27 @@ map K <Nop>
 
 set expandtab
 
-" These days the neighborhoods use hard tabs; XXX should just auto-detect
 autocmd FileType c set tabstop=8 noexpandtab
 autocmd BufRead *.h set tabstop=8 noexpandtab
 
 autocmd BufRead *.coffee set expandtab
 
-" shell-core
 autocmd FileType sh set expandtab
 autocmd BufRead *.sh set expandtab
 
-" god files --> ruby
 autocmd BufRead *.god set filetype=ruby
 
-" Ruby
 autocmd BufRead *.rb set tabstop=2 expandtab
 
-" pp --> puppet
 autocmd BufRead *.pp set filetype=puppet
 autocmd BufRead *.aug set tabstop=4
 
 autocmd BufRead *.coffee set filetype=coffee
 
-" Files ending ".make" should be treated as Makefiles
 autocmd BufRead *.make set filetype=make
 
-" Use tabstop of 8 and insert real tab characters for Makefiles
 autocmd FileType make set tabstop=8 noexpandtab
 
-" SCons files should be highlighted like Python
 autocmd BufRead *.sc set filetype=python
 
 autocmd BufRead *.go set filetype=go
@@ -120,14 +106,6 @@ autocmd FileType go set tabstop=4 noexpandtab
 
 autocmd BufRead *.strace.out set filetype=strace
 autocmd BufRead strace* set filetype=strace
-
-if has('gui_running')
-  " For build output maxout the columns
-  autocmd BufRead build.out.* set columns=190
-
-  " For annotation output I want 80 columns + 88 for the ann column
-  autocmd BufRead *.ann.out set columns=168
-endif
 
 au BufRead,BufNewFile *.ts set filetype=typescript
 
