@@ -1,21 +1,7 @@
 " Jon Simons' vimrc file
 
-if has('gui_running')
-  " I twiddle these fairly regularly
-  "color darkblue2
-  "color sf
-  "color autumnleaf_js
-  "color desert
-  color default
-else
-  " If I'm using vim in a terminal (not gvim), stick to default
-  " darkblue2 looks best in PuTTy; default looks good at work.
-  "color darkblue2
-  "color default
-  "color sf
-  color hemisu
-endif
 set background=dark
+color hemisu
 
 " Makes a difference when using vim over SSH
 set t_Co=256
