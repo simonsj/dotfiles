@@ -5,7 +5,7 @@ export PS1='[\u@\h : \W] '
 export PATH="$HOME/bin:$PATH"
 
 # for Homebrew Ruby version
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/opt/sqlite/bin:$PATH"
 
 # git stuff
 export GIT_EDITOR='vim'
