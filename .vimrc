@@ -99,6 +99,7 @@ autocmd BufRead *.make set filetype=make
 autocmd FileType make set tabstop=8 noexpandtab
 
 autocmd BufRead *.sc set filetype=python
+autocmd BufRead *.py set tabstop=4
 
 autocmd BufRead *.go set filetype=go
 autocmd Syntax go source ~/.vim/syntax/go.vim
