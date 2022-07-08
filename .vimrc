@@ -1,16 +1,15 @@
 " Jon Simons' vimrc file
 
-set background=dark
-color hemisu
-
-" Makes a difference when using vim over SSH
 set t_Co=256
+syn on
+
+set background=dark
+color PaperColor
 
 set number
 set tabstop=2
 set nowrap
 set vb
-syn on
 
 if has('gui_running')
   " Try to maintain a sane window size
