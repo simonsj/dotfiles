@@ -86,6 +86,7 @@ autocmd FileType sh set expandtab
 autocmd BufRead *.sh set expandtab
 
 autocmd BufRead *.god set filetype=ruby
+autocmd BufRead Brewfile set filetype=ruby
 
 autocmd BufRead *.rb set tabstop=2 expandtab
 
