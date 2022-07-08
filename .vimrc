@@ -77,8 +77,8 @@ map K <Nop>
 
 set expandtab
 
-autocmd FileType c set tabstop=8 noexpandtab
-autocmd BufRead *.h set tabstop=8 noexpandtab
+autocmd FileType c set tabstop=4 noexpandtab
+autocmd BufRead *.h set tabstop=4 noexpandtab
 
 autocmd BufRead *.coffee set expandtab
 
