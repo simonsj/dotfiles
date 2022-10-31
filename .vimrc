@@ -112,3 +112,6 @@ au BufRead,BufNewFile *.ts set filetype=typescript
 
 autocmd BufRead,BufNewFile *.m set filetype=octave
 autocmd Syntax octave source ~/.vim/syntax/octave.vim
+
+autocmd BufRead,BufNewFile *.sexp set filetype=scheme
+autocmd BufRead,BufNewFile jbuild set filetype=scheme
