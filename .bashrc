@@ -26,8 +26,7 @@ alias hs='hg status'
 # Aliases and history settings
 alias vi='vim'
 
-if [ $(uname) = "Linux" ]
-then
+if [ $(uname) = "Linux" ]; then
   alias ls='ls --color=auto'
 else
   # On MacOSX 'export CLICOLOR=1' yields the above effect.
@@ -53,3 +52,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # tmux attach-to-first-or-create
 alias tm='tmux list-sessions 2>/dev/null ; if [ $? = 0 ]; then tmux attach ; else tmux ; fi'
+
+# say 'pbcopy' on Linux
+if [ $(uname) = "Linux" ]; then
+  alias pbcopy="xclip"
+fi
