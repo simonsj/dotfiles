@@ -3,8 +3,8 @@
 set t_Co=256
 syn on
 
-set background=dark
-color PaperColor
+set background=light
+color estilo-xoria256
 
 set number
 set tabstop=2
