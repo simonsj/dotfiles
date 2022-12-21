@@ -74,6 +74,10 @@ imap <F1> <Esc>
 " I have never wanted 'K' to do what it does
 map K <Nop>
 
+" Use Q for q
+nnoremap Q q
+map q <Nop>
+
 set expandtab
 
 autocmd FileType c set tabstop=4 noexpandtab
