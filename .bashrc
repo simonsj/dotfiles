@@ -4,13 +4,6 @@ export PS1='[\u@\h : \W] '
 # Various bin paths
 export PATH="$HOME/bin:$PATH"
 
-# for Homebrew Ruby version
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-# for Homebrew SQLite
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-# for Homebrew LLVM
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-
 # git stuff
 export GIT_EDITOR='vim'
 alias gb='git branch'
@@ -48,7 +41,7 @@ alias lt='ls -altrh'
 # Bash history
 export HISTSIZE=10000
 export HISTCONTROL="ignoredups:erasedups"
-export HISTIGNORE="ls:pwd:gow:hgt"
+export HISTIGNORE="ls:pwd:lt"
 shopt -s histappend
 
 export HOMEBREW_NO_ANALYTICS=1
