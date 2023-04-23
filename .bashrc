@@ -54,3 +54,5 @@ alias tm='tmux list-sessions 2>/dev/null ; if [ $? = 0 ]; then tmux attach ; els
 if [ $(uname) = "Linux" ]; then
   alias pbcopy="xclip"
 fi
+
+alias p3='python3'
