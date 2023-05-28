@@ -2,7 +2,7 @@
 export PS1='[\u@\h : \W] '
 
 # Various bin paths
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
 
 # git stuff
 export GIT_EDITOR='vim'
