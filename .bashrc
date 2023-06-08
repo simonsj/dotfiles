@@ -56,3 +56,5 @@ if [ $(uname) = "Linux" ]; then
 fi
 
 alias p3='python3'
+
+alias treeml='tree -P "*.ml|*.mli"'
