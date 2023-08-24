@@ -11,11 +11,6 @@ set tabstop=2
 set nowrap
 set vb
 
-if has('gui_running')
-  " Try to maintain a sane window size
-  set columns=80
-endif
-
 " Show lists of files when doing ":sp" or ":e" or whatever
 set wildmode=longest,list
 " Set lbr so that linebreaks try to happen at word boundaries
@@ -35,11 +30,6 @@ map <C-h> :set hls!<CR>:echo "highlighting" &hls ? "on" : "off"<CR>
 " Toggle list mode with control l
 map <C-l> :set list!<CR>:echo "list mode" &list ? "on" : "off"<CR>
 
-if has('gui_running')
-  " Give me a horizontal scroll bar with control b
-  map <C-b> :set guioptions+=b<CR>:echo "you have a horizontal scroll bar"<CR>
-endif
-
 if &diff
   " Control h to go to left window
   map <C-h> <C-w>h<CR>
@@ -49,8 +39,6 @@ if &diff
   map <C-n> ]c
   " Control p to go to previous diff
   map <C-p> [c
-  " I probably want the horizontal scroll bar when diffing like a madman
-  set guioptions+=b
   " I don't use ^F ever; this grabs opposite side's diff piece
   map <C-f> :diffget<CR>
   " I don't use ^D ever; put from current side to the opposite side
