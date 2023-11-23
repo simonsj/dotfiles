@@ -107,3 +107,14 @@ autocmd Syntax octave source ~/.vim/syntax/octave.vim
 
 autocmd BufRead,BufNewFile *.sexp set filetype=scheme
 autocmd BufRead,BufNewFile jbuild set filetype=scheme
+
+"
+" OCaml: try to get merlin stuff working
+" https://ocaml.github.io/merlin/editor/vim/
+"
+autocmd BufRead,BufNewFile *.ml,*.mli set filetype=ocaml
+autocmd FileType ocaml filetype plugin on
+autocmd FileType ocaml filetype indent on
+autocmd FileType ocaml let g:opamshare = substitute(system('opam var share'),'\n$','','''')
+autocmd FileType ocaml execute "set rtp+=" . g:opamshare . "/merlin/vim"
+autocmd FileType ocaml map <C-l> :set list!<CR>:MerlinClearEnclosing<CR>:echo "list mode" &list ? "on" : "off"<CR>
