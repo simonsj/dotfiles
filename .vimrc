@@ -1,11 +1,5 @@
 " Jon Simons' vimrc file
 
-set t_Co=256
-syn on
-
-set background=light
-color estilo-xoria256
-
 set number
 set tabstop=2
 set nowrap
@@ -118,3 +112,8 @@ autocmd FileType ocaml filetype indent on
 autocmd FileType ocaml let g:opamshare = substitute(system('opam var share'),'\n$','','''')
 autocmd FileType ocaml execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd FileType ocaml map <C-l> :set list!<CR>:MerlinClearEnclosing<CR>:echo "list mode" &list ? "on" : "off"<CR>
+
+set t_Co=256
+syn on
+set background=light
+color estilo-xoria256
