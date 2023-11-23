@@ -68,6 +68,7 @@ autocmd BufRead *.h set tabstop=4 noexpandtab
 autocmd BufRead *.coffee set expandtab
 
 autocmd FileType sh set expandtab
+autocmd FileType sh let g:is_posix = 1
 autocmd BufRead *.sh set expandtab
 
 autocmd BufRead *.god set filetype=ruby
