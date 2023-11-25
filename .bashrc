@@ -48,7 +48,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # tmux attach-to-first-or-create
-alias tm='tmux list-sessions 2>/dev/null ; if [ $? = 0 ]; then tmux attach ; else tmux ; fi'
+alias tm='tmux new-session -A -s 0'
 
 # say 'pbcopy' on Linux
 if [ $(uname) = "Linux" ]; then
