@@ -58,3 +58,6 @@ fi
 alias p3='python3'
 
 alias treeml='tree -P "*.ml|*.mli"'
+
+bind '"\e[A":'
+bind '"\e[B":'
