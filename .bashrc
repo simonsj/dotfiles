@@ -1,5 +1,6 @@
 # Command prompt
-export PS1='[\u@\h : \W] '
+hostname=$(scutil --get ComputerName)
+export PS1="[\u@$hostname : \W] "
 
 # Various bin paths
 export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
