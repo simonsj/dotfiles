@@ -118,7 +118,6 @@ autocmd BufRead,BufNewFile *.rs set filetype=rust
 
 set t_Co=256
 syn on
-set background=light
 color estilo-xoria256
 
 if has('nvim')
