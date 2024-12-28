@@ -4,6 +4,7 @@ export PS1="[\u@$hostname : \W] "
 
 # Various bin paths
 export PATH="$HOME/bin:/opt/homebrew/bin:$PATH"
+. "$HOME/.cargo/env"
 
 # git stuff
 export GIT_EDITOR='vim'

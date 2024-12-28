@@ -114,6 +114,8 @@ autocmd FileType ocaml let g:opamshare = substitute(system('opam var share'),'\n
 autocmd FileType ocaml execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd FileType ocaml map <C-l> :set list!<CR>:MerlinClearEnclosing<CR>:echo "list mode" &list ? "on" : "off"<CR>
 
+autocmd BufRead,BufNewFile *.rs set filetype=rust
+
 set t_Co=256
 syn on
 set background=light
