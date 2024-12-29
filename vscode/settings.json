@@ -1,0 +1,90 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "breadcrumbs.enabled": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "cursor-retrieval.canAttemptGithubLogin": false,
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingComments": "never",
+  "editor.autoClosingDelete": "never",
+  "editor.autoClosingOvertype": "never",
+  "editor.autoClosingQuotes": "never",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Geist Mono'",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnType": true,
+  "editor.guides.indentation": false,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.renderControlCharacters": false,
+  "editor.renderFinalNewline": "off",
+  "editor.renderWhitespace": "none",
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 4,
+  "editor.wordWrap": "off",
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false
+  },
+  "makefile.configureOnOpen": true,
+  "ocaml.sandbox": {
+    "kind": "opam"
+  },
+  "ocaml.server.extendedHover": true,
+  "rust-analyzer.diagnostics.disabled": [
+    "inactive-code"
+  ],
+  "terminal.integrated.allowChords": true,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.showExitAlert": false,
+  "vim.foldfix": true,
+  "vim.ignorecase": false,
+  "vim.incsearch": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        " ",
+        "<CR>"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.vimrc.enable": true,
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Material Theme Palenight"
+}
