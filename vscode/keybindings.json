@@ -1,0 +1,169 @@
+[
+  {
+    "key": "ctrl+b j",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+b shift+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b i",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b ctrl+b",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002\u0002"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b ctrl+b",
+    "command": "cursorPageUp",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+b j",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002j"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b k",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002k"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b h",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002h"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b shift+h",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002H"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b l",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002l"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b shift+l",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002L"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b shift+'",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002\""
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b [",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002["
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b shift+5",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002%"
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b space",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002 "
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "editor.action.toggleRenderControlCharacter",
+        "editor.action.toggleRenderWhitespace"
+      ]
+    },
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+cmd+d",
+    "command": "editor.cpp.disableenabled"
+  },
+  {
+    "key": "shift+alt+cmd+e",
+    "command": "editor.action.enableCppGlobally"
+  },
+  {
+    "key": "\\ t",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "\\ \\",
+    "command": "type",
+    "args": {
+      "text": "\\"
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.positionPanelBottom",
+        "workbench.action.terminal.focus"
+      ]
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.positionPanelRight",
+        "workbench.action.terminal.focus"
+      ]
+    },
+    "when": "terminalFocus"
+  }
+]
