@@ -1,0 +1,16 @@
+" Jon Simons' vimrc file, with changes for VSCodeVim limitations.
+
+set number
+set tabstop=2
+set nowrap
+
+" Control d to close the current buffer
+map <C-d> :bd<CR>
+" Control n to go to next buffer
+map <C-n> :bn<CR>
+" Control p to go to previous buffer
+map <C-p> :bp<CR>
+
+" Use Q for q
+nnoremap Q q
+map q <Nop>
