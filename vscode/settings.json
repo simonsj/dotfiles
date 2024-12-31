@@ -38,6 +38,8 @@
     "publish": false,
     "sync": false
   },
+  "github.branchProtection": false,
+  "github.gitAuthentication": false,
   "makefile.configureOnOpen": true,
   "ocaml.sandbox": {
     "kind": "opam"
