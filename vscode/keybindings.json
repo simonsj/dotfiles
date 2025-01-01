@@ -119,6 +119,14 @@
     "when": "editorFocus"
   },
   {
+    "key": "ctrl+h",
+    "command": "vim.cmd",
+    "args": {
+      "text": "set hls!"
+    },
+    "when": "editorFocus"
+  },
+  {
     "key": "shift+alt+cmd+d",
     "command": "editor.cpp.disableenabled"
   },
