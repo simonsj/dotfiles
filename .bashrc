@@ -12,7 +12,7 @@ alias gb='git branch'
 alias gcp='git cherry-pick'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias gfo='git fetch --all --prune --verbose'
+alias gfo='git fetch --all --prune --verbose --no-tags'
 alias gl='git log'
 alias gs='git status'
 
