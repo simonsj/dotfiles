@@ -5,7 +5,6 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "breadcrumbs.enabled": false,
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
@@ -32,7 +31,7 @@
   "editor.renderWhitespace": "none",
   "editor.stickyScroll.enabled": false,
   "editor.tabSize": 4,
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "on",
   "git.showActionButton": {
     "commit": false,
     "publish": false,
@@ -88,5 +87,5 @@
   ],
   "vim.vimrc.enable": true,
   "window.commandCenter": true,
-  "workbench.colorTheme": "Material Theme Palenight"
+  "workbench.colorTheme": "Material Theme Palenight High Contrast"
 }
