@@ -16,12 +16,6 @@ alias gfo='git fetch --all --prune --verbose --no-tags'
 alias gl='git log'
 alias gs='git status'
 
-# hg stuff
-alias hd='hg diff'
-alias hl='hg log'
-alias ho='hg outgoing'
-alias hs='hg status'
-
 # Aliases and history settings
 alias vi='vim'
 
