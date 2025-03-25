@@ -1,0 +1,6 @@
+# https://ghostty.org/docs/config
+# $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+font-family = "Geist Mono"
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
