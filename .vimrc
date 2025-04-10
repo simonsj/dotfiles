@@ -124,3 +124,8 @@ if has('nvim')
   set noincsearch
   set listchars=eol:$
 endif
+
+function! s:RemoveLastPathComponent()
+  return substitute(getcmdline(), '\%(\\ \|[\\/]\@!\f\)\+[\\/]\=$\|.$', '', '')
+endfunction
+cnoremap <C-_> <C-\>e(<SID>RemoveLastPathComponent())<CR>
