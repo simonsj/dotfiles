@@ -108,6 +108,14 @@
     "when": "terminalFocus"
   },
   {
+    "key": "ctrl+b d",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0002d"
+    },
+    "when": "terminalFocus"
+  },
+  {
     "key": "ctrl+l",
     "command": "runCommands",
     "args": {
