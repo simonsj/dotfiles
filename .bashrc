@@ -55,8 +55,10 @@ alias p3='python3'
 
 alias treeml='tree -P "*.ml|*.mli"'
 
-bind '"\e[A":'
-bind '"\e[B":'
+if test -t 0; then
+  bind '"\e[A":'
+  bind '"\e[B":'
+fi
 
 squashlog () {
   local REV=${1:-origin/main..HEAD};
