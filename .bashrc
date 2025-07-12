@@ -1,5 +1,5 @@
 # Command prompt
-hostname=$(scutil --get ComputerName)
+hostname=$(uname -s | grep -q Darwin && scutil --get ComputerName || hostname)
 export PS1="[\u@$hostname : \W] "
 
 # Various bin paths
