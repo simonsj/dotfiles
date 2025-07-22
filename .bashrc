@@ -16,6 +16,16 @@ alias gfo='git fetch --all --prune --verbose --no-tags'
 alias gl='git log'
 alias gs='git status'
 
+if type __git_complete >/dev/null 2>&1; then
+  __git_complete gb _git_branch
+  __git_complete gcp _git_cherry_pick
+  __git_complete gd _git_diff
+  __git_complete gdc _git_diff
+  __git_complete gfo _git_fetch
+  __git_complete gl _git_log
+  __git_complete gs _git_status
+fi
+
 # Aliases and history settings
 alias vi='vim'
 
