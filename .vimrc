@@ -95,6 +95,8 @@ autocmd FileType go set tabstop=4 noexpandtab
 autocmd BufRead *.strace.out set filetype=strace
 autocmd BufRead strace* set filetype=strace
 
+" https://vi.stackexchange.com/questions/25086/vim-hangs-when-i-open-a-typescript-file
+au BufRead,BufNewFile *.ts set re=0
 au BufRead,BufNewFile *.ts set filetype=typescript
 
 autocmd BufRead,BufNewFile *.m set filetype=octave
