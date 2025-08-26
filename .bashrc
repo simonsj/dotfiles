@@ -74,7 +74,7 @@ fi
 squashlog () {
   local REV=${1:-origin/main..HEAD};
   local HEAD_CMD=$(uname -s | grep -q Darwin && echo "ghead" || echo "head");
-  git log --reverse --no-merges --format=' - %s%n%n%w(0,3,3)%b' ${REV} |
+  git log --first-parent --reverse --no-merges --format=' - %s%n%n%w(0,3,3)%b' ${REV} |
     ${HEAD_CMD} -n -1 | tr '\n' '%' | sed -e 's/%%%/%%/g' | tr '%' '\n'
 }
 export -f squashlog
