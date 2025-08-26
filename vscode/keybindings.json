@@ -189,5 +189,25 @@
       ]
     },
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "when": "textCompareEditorActive",
+    "command": "workbench.action.compareEditor.nextChange"
+  },
+  {
+    "key": "ctrl+p",
+    "when": "textCompareEditorActive",
+    "command": "workbench.action.compareEditor.previousChange"
+  },
+  {
+    "key": "ctrl+w h",
+    "when": "textCompareEditorActive",
+    "command": "workbench.action.compareEditor.focusOtherSide"
+  },
+  {
+    "key": "ctrl+w l",
+    "when": "textCompareEditorActive",
+    "command": "workbench.action.compareEditor.focusOtherSide"
   }
 ]
