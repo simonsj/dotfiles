@@ -54,6 +54,8 @@ shopt -s histappend
 
 export HOMEBREW_NO_ANALYTICS=1
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export GH_TELEMETRY=false
+export DO_NOT_TRACK=true
 
 # tmux attach-to-first-or-create
 alias tm='tmux new-session -A -s 0'
