@@ -17,6 +17,7 @@ alias gl='git log'
 alias gs='git status'
 alias gf='f() { git ls-tree --name-only -r HEAD | grep -i -- "$1"; }; f'
 alias amend='git commit --amend'
+alias gref='git show -s --pretty=reference'
 
 if type __git_complete >/dev/null 2>&1; then
   __git_complete gb _git_branch
